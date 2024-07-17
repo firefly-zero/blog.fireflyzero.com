@@ -1,4 +1,7 @@
-# WebAssembly: the ultimate solution to all viruses
+---
+title: "WebAssembly: the ultimate solution to all viruses"
+draft: true
+---
 
 ## Browser: the most complex program
 

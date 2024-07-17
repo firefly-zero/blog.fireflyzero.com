@@ -1,0 +1,72 @@
+baseURL = "https://blog.fireflizero.com/"
+languageCode = "en-us"
+title = "Firefly Zero blog"
+paginate = 40
+theme = "PaperMod"
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+disableXML = true
+minifyOutput = true
+
+[params]
+env = "production"
+keywords = ["blog", "firefly zero", "game console", "startup"]
+# images = "["<link or path of image for opengraph, twitter-cards>"]"
+DateFormat = "2006-02-01"
+defaultTheme = "auto"
+disableThemeToggle = false
+
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = false
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = true
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = true
+showtoc = true
+tocopen = false
+
+socialIcons = [
+    { name = "home", url = "https://fireflyzero.com/" },
+    { name = "rss", url = "/index.xml" },
+    { name = "mastodon", url = "https://fosstodon.org/@fireflyzero" },
+    { name = "twitter", url = "https://x.com/fireflyzerocom" },
+    { name = "pixelfed", url = "https://gram.social/firefly" },
+    { name = "instagram", url = "https://www.instagram.com/fireflyzero/" },
+    { name = "github", url = "https://github.com/firefly-zero" },
+]
+
+[params.editPost]
+URL = "https://github.com/firefly-zero/blog.fireflyzero.com/blob/main/content/"
+Text = "source"
+appendFilePath = true
+
+[params.homeInfoParams]
+Title = "Firefly Zero blog"
+Content = "Official posts about everything related to Firefly Zero handheld game console."
+
+[[menu.main]]
+name = "🏷 tags"
+url = "/tags/"
+weight = 10
+
+[[menu.main]]
+name = "📶 rss"
+url = "/index.xml"
+weight = 20
+
+[[menu.main]]
+name = "🏠 home"
+url = "https://fireflyzero.com/"
+weight = 30
