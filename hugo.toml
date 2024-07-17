@@ -48,13 +48,13 @@ socialIcons = [
 ]
 
 [params.editPost]
-URL = "https://github.com/firefly-zero/blog.fireflyzero.com/blob/main/content/"
+URL = "https://github.com/firefly-zero/blog.fireflyzero.com/blob/main/content"
 Text = "source"
 appendFilePath = true
 
 [params.homeInfoParams]
 Title = "Firefly Zero blog"
-Content = "Official posts about everything related to Firefly Zero handheld game console."
+Content = "Official posts about [Firefly Zero](https://fireflyzero.com/) and all things around."
 
 [[menu.main]]
 name = "🏷 tags"
