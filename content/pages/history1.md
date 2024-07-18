@@ -5,6 +5,8 @@ date: "2024-07-17"
 tags: ["software"]
 ---
 
+This is the first post in the two part series about history of Firefly Zero. This post is dedicated to the technologies that inspired Firefly Zero, from early computers to modern programming languages.
+
 ## CHIP-8
 
 In 1977, [Joseph Weisbecker] released [COSMAC VIP]. It was a personal computer designed for writing and playing video games. The whole idea of video games was quite new. [Tetris] was created only in 1985 (8 years after COSMAC VIP). [Pong] was released in 1972, but it was an arcade game, and you would play it on a special big machine designed to run just this one thing. The idea of a computer that is designed for games and can be used to both write and play them was big.
@@ -47,7 +49,13 @@ PICO-8 made a big impact on the retro game development. There are [more than 500
 
 [WASM-4] is a minimalistic fantasy console that uses [WebAssembly] as games format. What is WebAssembly? It's a binary format for programs, similar to `.exe` on Windows. The "Web" part in its name means that it is designed to be executed on web pages, just like good old JavaScript, and your browser already supports it for many years. That means, you can play any game written for WASM-4 right in the browser.
 
-In terms of features, WASM-4 lags behind PICO-8 and TIC-80.
+In terms of features, WASM-4 lags behind PICO-8 and TIC-80: it doesn't have any editors for sprites, music, or sounds. It doesn't even have an interactive prompt like everything else in this post has. And yet, there is still a community of people using it, with [about 120 games published](https://wasm4.org/play) on the website. It is far more than [any other fantasy console](https://paladin-t.github.io/fantasy/index) that we haven't even mentioned. Why so?
+
+That's because games for WebAssembly can be written in lots of languages. The official WASM-4 documentation has code examples for 14 programming languages. And unlike in TIC-80, all of these languages are compiled. Compiled languages are generally faster and can make a better use of intentionally contrained resources provided by fantasy consoles.
 
 [WASM-4]: https://wasm4.org/
 [WebAssembly]: https://en.wikipedia.org/wiki/WebAssembly
+
+## To be continued
+
+Curious to see how it all ties together? Stay tuned for the second part!
