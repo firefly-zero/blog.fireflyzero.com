@@ -1,5 +1,5 @@
 ---
-title: "A brief history of Firefly Zero"
+title: "Fantasy video game consoles"
 author: "Gram"
 date: "2024-07-17"
 tags: ["software"]
@@ -39,22 +39,15 @@ PICO-8 made a big impact on the retro game development. There are [more than 500
 
 ## TIC-80
 
-[TIC-80] is one of the many fantasy consoles that PICO-8 inspired.
+[TIC-80] is one of the many fantasy consoles inspired by PICO-8. The most notable differences are: it's fully open source and it supports lots of programming languages, not just one. There are about 1100 finished games listed on their website. And probably that's all there is to say about it. It's not that influencial or notable as PICO-8 but Firefly Zero got a lot of inspiration from it.
 
 [TIC-80]: https://en.wikipedia.org/wiki/TIC-80
 
 ## WASM-4
 
-...
+[WASM-4] is a minimalistic fantasy console that uses [WebAssembly] as games format. What is WebAssembly? It's a binary format for programs, similar to `.exe` on Windows. The "Web" part in its name means that it is designed to be executed on web pages, just like good old JavaScript, and your browser already supports it for many years. That means, you can play any game written for WASM-4 right in the browser.
 
-## TinyGo, PyBadge, and Thumby
+In terms of features, WASM-4 lags behind PICO-8 and TIC-80.
 
-...
-
-## ESP-32
-
-...
-
-## Firefly Zero
-
-...
+[WASM-4]: https://wasm4.org/
+[WebAssembly]: https://en.wikipedia.org/wiki/WebAssembly
