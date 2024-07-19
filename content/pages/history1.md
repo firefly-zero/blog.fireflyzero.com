@@ -1,5 +1,5 @@
 ---
-title: "Fantasy video game consoles"
+title: "A brief history of fantasy video game consoles"
 author: "Gram"
 date: "2024-07-19"
 tags: ["software"]
@@ -7,7 +7,7 @@ tags: ["software"]
 
 This is the first post in the two-part series about the history of Firefly Zero. This post is dedicated to the technologies that inspired Firefly Zero, from early computers to modern programming languages.
 
-## CHIP-8
+## 1977. CHIP-8
 
 In 1977, [Joseph Weisbecker] released [COSMAC VIP]. It was a personal computer designed for writing and playing video games. The whole idea of video games was quite new. [Tetris] was created only in 1985 (8 years after COSMAC VIP). [Pong] was released in 1972, but it was an arcade game, and you would play it on a special big machine designed to run just this one thing. The idea of a computer that is designed for games and can be used to both write and play them was big.
 
@@ -24,7 +24,7 @@ We happened to be born decades after CHIP-8 and all these early computers. So, f
 [Joseph Weisbecker]: https://en.wikipedia.org/wiki/Joseph_Weisbecker
 [Joyce Weisbecker]: https://en.wikipedia.org/wiki/Joyce_Weisbecker
 
-## PICO-8
+## 2015. PICO-8
 
 [PICO-8] is the first "[fantasy video game console]". "Fantasy" means that there is no actual physical console and never was, only an emulator. It's a virtual machine of sorts that you download on your computer, install, and run. Inside you'll see a text-based terminal, just like in CHIP-8. You type a command, press enter, and immediately see a result. Again, just like on CHIP-8. The programming language is different (Lua) but the ideas are the same: interpreted programming language, interactive text input, designed for both writing and running games. It also comes with an editor for sprites, maps, sounds, and music to give you everything you need for making your own retro game.
 
@@ -39,13 +39,13 @@ PICO-8 made a big impact on retro game development. There are [more than 5000 PI
 [PICO-8 Zine]: https://sectordub.itch.io/pico-8-fanzine-1
 [fantasy video game console]: https://en.wikipedia.org/wiki/Fantasy_video_game_console
 
-## TIC-80
+## 2017. TIC-80
 
 [TIC-80] is one of the many fantasy consoles inspired by PICO-8. The most notable differences are: it's fully open source and it supports lots of programming languages, not just one. There are about 1100 finished games listed on their website. And probably that's all there is to say about it. It's not as influential or notable as PICO-8 but Firefly Zero got a lot of inspiration from it.
 
 [TIC-80]: https://en.wikipedia.org/wiki/TIC-80
 
-## WASM-4
+## 2021. WASM-4
 
 [WASM-4] is a minimalistic fantasy console that uses [WebAssembly] as a game format. What is WebAssembly? It's a binary format for programs, similar to `.exe` on Windows. The "Web" part in its name means that it is designed to be executed on web pages, just like good old JavaScript, and your browser already supports it for many years. That means you can play any game written for WASM-4 right in the browser.
 
