@@ -24,6 +24,8 @@ And some people were pushing it even further. Here are a few of my favorite brow
 * [Windows 95](https://archive.org/details/win95_in_dosbox)
 * [Gameboy](http://binji.github.io/binjgb/) (you'll need a ROM to play, [download one here](https://www.emulatorgames.net/roms/gameboy/))
 
+![A screenshot of DOOM running in browser](https://hackaday.com/wp-content/uploads/2021/07/doom.png)
+
 ## 2023-11. Aard
 
 In November 2023, I started to write a programming language called Aard. Currently, it's on pause in favor of Firefly Zero, so I have nothing to show but a lot to tell. It's one of the very few languages that target only WebAssembly. Which means, it can use its full power without compromises. When it's done, it will be a way to write the smallest and the fastest programs for WebAssembly, beating Rust, Zig, C, and other programming languages that are generally considered fast.
@@ -46,13 +48,17 @@ Word by word, I started to talk about Aard and WebAssembly. And turns out, that 
 1. We added a pure WebAssembly target into TinyGo. That means, now you can run Go apps in non-browser WebAssembly runtimes.
 1. We made [Wazero] compile with TinyGo. Wazero is a pure Go runtime for WebAssembly. That means, now you have a WebAssembly runtime that can run on any device that TinyGo supports. And it's a very long list! TinyGo-powered projects are running on keyboards, drones, thermometers, and even earrings.
 1. We made [Mechanoid], a framework for running WebAssembly on IoT devices. It's a TinyGo and Wazero-powered runtime that provides to WebAssembly apps access to things like device screen, sensor values, keyboard input, etc.
+1. We launched Mechanoid on [Thumby], the smallest game console in the world.
 
-Ron presented all of it and some other projects, like controlling a drone with WebAssembly, at WASM/IO. Here is the full talk: [The Smallest Thing That Could Possibly Work: WASM on Microcontrollers With TinyGo](https://www.youtube.com/watch?v=24NDl27mZu4&pp=ygURcm9uIGV2YW5zIHdhc20vaW8%3D).
+Ron presented all of it and some Mechanoid-powered projects at WASM/IO. Here is the full talk: [The Smallest Thing That Could Possibly Work: WASM on Microcontrollers With TinyGo](https://www.youtube.com/watch?v=24NDl27mZu4&pp=ygURcm9uIGV2YW5zIHdhc20vaW8%3D).
+
+![A photo of Mechanoid running on Thumby, a penny-sized game console](https://github.com/hybridgroup/mechanoid-examples/blob/main/images/thumby.jpg?raw=true)
 
 [Ron Evans]: https://github.com/deadprogram
 [Mechanoid]: https://github.com/hybridgroup/mechanoid
 [Wazero]: https://github.com/tetratelabs/wazero
 [TinyGo]: https://tinygo.org/
+[Thumby]: https://thumby.us/
 
 ## 2024-02. Gamgee
 
@@ -65,6 +71,8 @@ So I picked the following tech stack:
 * [AdaFruit PyBadge](https://www.adafruit.com/product/4200) as the device. It has just about 196 KB of RAM, a small 180x148 TFT display, and just enough buttons for playing a retro game.
 
 The result of it was [gamgee], the world's first game console running WebAssembly. And it works great! It doesn't have sound because I didn't have time to implement it but that was already enough for a proof of concept. I had proof that it is possible to make a game console running WebAssembly, and you need for it just a few kilobytes of RAM.
+
+![A photo of AdaFruit Pybadge running watris, a Tetris game ported to WASM-4](https://raw.githubusercontent.com/orsinium-labs/gamgee/main/photo.jpg)
 
 [gamgee]: https://github.com/orsinium-labs/gamgee
 
