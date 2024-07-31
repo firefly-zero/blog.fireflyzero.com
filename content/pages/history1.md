@@ -7,6 +7,8 @@ tags: ["software"]
 
 This is the first post in the two-part series about the history of Firefly Zero. This post is dedicated to the technologies that inspired Firefly Zero, from early computers to modern programming languages.
 
+Second part: [Bringing WebAssembly to microcontrollers](./history2.md).
+
 ## 1977. CHIP-8
 
 In 1977, [Joseph Weisbecker] released [COSMAC VIP]. It was a personal computer designed for writing and playing video games. The whole idea of video games was quite new. [Tetris] was created only in 1985 (8 years after COSMAC VIP). [Pong] was released in 1972, but it was an arcade game, and you would play it on a special big machine designed to run just this one thing. The idea of a computer that is designed for games and can be used to both write and play them was big.
@@ -58,4 +60,4 @@ That's because games for WebAssembly can be written in lots of languages. The of
 
 ## To be continued
 
-Curious to see how it all ties together? Stay tuned for the second part!
+Curious to see how it all ties together? Check out the second part: [Bringing WebAssembly to microcontrollers](./history2.md)
