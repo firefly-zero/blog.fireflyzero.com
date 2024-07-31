@@ -1,7 +1,7 @@
 ---
 title: "Bringing WebAssembly to microcontrollers"
 author: "Gram"
-date: "2024-08-02"
+date: "2024-07-31"
 tags: ["software"]
 ---
 
@@ -28,34 +28,35 @@ And some people were pushing it even further. Here are a few of my favorite brow
 
 In November 2023, I started to write a programming language called Aard. Currently, it's on pause in favor of Firefly Zero, so I have nothing to show but a lot to tell. It's one of the very few languages that target only WebAssembly. Which means, it can use its full power without compromises. When it's done, it will be a way to write the smallest and the fastest programs for WebAssembly, beating Rust, Zig, C, and other programming languages that are generally considered fast.
 
-For me, Aard meant going back to WebAssembly. And this time, I had to know everything about it. I started to read all proposals and specifications, dig into different implementations, discover best practices, etc. I learned that WebAssembly isn't just a way to run Go in the browser. It's much, much more than that!
+For me, Aard meant going back to WebAssembly. And this time, I had to know everything about it. I started reading all proposals and specifications, digging into different implementations, discovering best practices, etc. I learned that WebAssembly isn't just a way to run Go in the browser. It's much, much more than that!
 
-* WebAssembly is a secure sandbox. WebAssembly apps can do only what their runtime allows them to do.
-* It makes impossible some common errors that plague everything written in C. YOu cannot access memory you don't own, you can't get a random "garbage value" in a variable. If there's a bug in your app and hackers can write any values into the memory, they still can't modify how your app works.
-* It's a virtual machine. The runtime can observe a lot about the running app. It knows how many instructions the app executed, if it's stuck in a loop, if it sends a network request, etc.
-* It's fast. Running a WebAssembly app is slower than running a native C app but much faster than running any interpreted language or any other virtual machine.
-* It's portable. The same WebAssembly app will work in exactly the same way in all environments.
-* It's relatively easy to implement. That means, there are lots of runtimes designed for different environments: browsers, smart contracts, embedded systems, etc.
+* WebAssembly is a **secure sandbox**. WebAssembly apps can do only what their runtime allows them to do.
+* It **makes impossible some common errors** that plague everything written in C. YOu cannot access memory you don't own, you can't get a random "garbage value" in a variable. If there's a bug in your app and hackers can write any values into the memory, they still can't modify how your app works.
+* It's a virtual machine. The runtime **can observe** a lot about the running app. It knows how many instructions the app executed, if it's stuck in a loop, if it sends a network request, etc.
+* It's **fast**. Running a WebAssembly app is slower than running a native C app but much faster than running any interpreted language or any other virtual machine.
+* It's **portable**. The same WebAssembly app will work in exactly the same way in all environments.
+* It's relatively **easy to implement**. That means, there are lots of runtimes designed for different environments: browsers, smart contracts, embedded systems, etc.
 
 ## 2024-02. TinyGo
 
-On 3 February 2024, I attended FOSDEM. It's a free conference dedicated to all things open source. There are lots of amazing people, talks, and stickers. There I met Ron Evans, a core maintainer of [TinyGo]. TinyGo is a "Go compiler for small places". It makes it possible to run almost any Go code on almost any device. The produced code is generally very small and quite fast. And it can compile Go to WebAssembly!
+On 3 February 2024, I attended [FOSDEM](https://fosdem.org/2024/). It's a free conference dedicated to all things open source. There are lots of amazing people, talks, and stickers. There I met [Ron Evans], a core maintainer of [TinyGo]. TinyGo is a "Go compiler for small places". It makes it possible to run almost any Go code on almost any device. The produced code is generally very small and quite fast. And it can compile Go to WebAssembly!
 
-Word by word, I started to talk about Aard and WebAssembly. And turns out, that Ron had a talk planned for WASM/IO, a conference in March 2024 dedicated to WebAssembly. He had some ideas of what to show but nothing was implemented yet. So, we decided to work on it together. In just one month, we produced several cool projects with a common idea of fusing Go and WebAssembly:
+Word by word, I started to talk about Aard and WebAssembly. And turns out, that Ron had a talk planned for [WASM/IO](https://wasmio.tech/), a conference in March 2024 dedicated to WebAssembly. He had some ideas of what to show but nothing was implemented yet. So, we decided to work on it together. In just one month, we produced several cool projects with a common idea of fusing Go and WebAssembly:
 
 1. We added a pure WebAssembly target into TinyGo. That means, now you can run Go apps in non-browser WebAssembly runtimes.
 1. We made [Wazero] compile with TinyGo. Wazero is a pure Go runtime for WebAssembly. That means, now you have a WebAssembly runtime that can run on any device that TinyGo supports. And it's a very long list! TinyGo-powered projects are running on keyboards, drones, thermometers, and even earrings.
 1. We made [Mechanoid], a framework for running WebAssembly on IoT devices. It's a TinyGo and Wazero-powered runtime that provides to WebAssembly apps access to things like device screen, sensor values, keyboard input, etc.
 
-Ron presented all of it and some other projects, like controlling a drone with WebAssembly, at WASM/IO. Here is the full talk: ...
+Ron presented all of it and some other projects, like controlling a drone with WebAssembly, at WASM/IO. Here is the full talk: [The Smallest Thing That Could Possibly Work: WASM on Microcontrollers With TinyGo](https://www.youtube.com/watch?v=24NDl27mZu4&pp=ygURcm9uIGV2YW5zIHdhc20vaW8%3D).
 
+[Ron Evans]: https://github.com/deadprogram
 [Mechanoid]: https://github.com/hybridgroup/mechanoid
 [Wazero]: https://github.com/tetratelabs/wazero
-[TinyGo]: https://github.com/tinygo-org/tinygo
+[TinyGo]: https://tinygo.org/
 
 ## 2024-02. Gamgee
 
-One more thing that I wanted to do a part of messing with WebAssembly is running WASM-4 (we talked about it in part 1) games on a small physical device. I picked Rust over Go as the best language for the job. Writing code in Rust is generally harder but the resulting apps consume less memory, which is important if I want to give the running games as much resources as possible. Also, Rust has the best ecosystem of everything related to WebAssembly.
+One more thing that I wanted to do a part of messing with WebAssembly is running WASM-4 ([we talked about it in part 1](http://localhost:1313/pages/history1/#2021-wasm-4)) games on a small physical device. I picked Rust over Go as the best language for the job. Writing code in Rust is generally harder but the resulting apps consume less memory, which is important if I want to give the running games as much resources as possible. Also, Rust has the best ecosystem of everything related to WebAssembly.
 
 So I picked the following tech stack:
 
