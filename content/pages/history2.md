@@ -55,9 +55,15 @@ Ron presented all of it and some other projects, like controlling a drone with W
 
 ## 2024-02. Gamgee
 
-...
+One more thing that I wanted to do a part of messing with WebAssembly is running WASM-4 games on a small physical device. I picked Rust over Go as the best language for the job. Writing code in Rust is generally harder but the resulting apps consume less memory, which is important if I want to give the running games as much resources as possible. Also, Rust has the best ecosystem of everything related to WebAssembly.
 
-[gamgee](https://github.com/orsinium-labs/gamgee)
+So I picked the following tech stack:
+
+* Rust as the programming language.
+* Wasmi as the WebAssembly runtime. It is designed for constrained environments, exactly what I needed.
+* [AdaFruit PyBadge](https://www.adafruit.com/product/4200) as the device. It has just about 196 Kb of RAM, a small 180x148 TFT display, and just enough buttons for playing a retro game.
+
+The result of it was [gamgee](https://github.com/orsinium-labs/gamgee), the world's first game console running WebAssembly. And it works great! It doesn't have sound because I didn't have time to implement it but that was already enough for a proof of concept. Now I had a proof that it is possible to make a game console running WebAssembly, and you need for it very little resources.
 
 ## 2024-03. Firefly Zero
 
