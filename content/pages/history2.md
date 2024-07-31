@@ -1,12 +1,11 @@
 ---
 title: "Bringing WebAssembly to microcontrollers"
 author: "Gram"
-date: "2024-07-19"
+date: "2024-07-20"
 tags: ["software"]
-draft: true
 ---
 
-This is the second and the last part in the series about the history of Firefly Zero. First part: [A brief history of fantasy video game consoles](./history1.md).
+This is the second and the last part in the series about the history of Firefly Zero. The first part: [A brief history of fantasy video game consoles](./history1.md).
 
 ## 2017. WebAssembly
 
@@ -27,20 +26,43 @@ And some people were pushing it even further. Here are a few of my favorite brow
 
 ## 2023-11. Aard
 
-In November 2023, I started to write a programming language.
+In November 2023, I started to write a programming language called Aard. Currently, it's on pause in favor of Firefly Zero, so I have nothing to show but a lot to tell. It's one of the very few languages that target only WebAssembly. Which means, it can use its full power without compromises. When it's done, it will be a way to write the smallest and the fastest programs for WebAssembly, beating Rust, Zig, C, and other programming languages that are generally considered fast.
+
+For me, Aard meant going back to WebAssembly. And this time, I had to know everything about it. I started to read all proposals and specifications, dig into different implementations, discover best practices, etc. I learned that WebAssembly isn't just a way to run Go in the browser. It's much, much more than that!
+
+* WebAssembly is a secure sandbox. WebAssembly apps can do only what their runtime allows them to.
+* It makes impossible some common errors that plague everything written in C. YOu cannot access memory you don't own, you can't get a random "garbage value" in a variable. If there's a bug in your app and hackers can write any values into the memory, they still can't modify how your app works.
+* It's a virtual machine. The runtime can observe a lot about the running app. It knows how many instructions the app executed, if it's stuck in a loop, if it sends a network request, etc.
+* It's fast. Running a WebAssembly app is slower than running a native C app but much faster than running any interpreted language or any other virtual machine.
+* It's portable. The same WebAssembly app will work in exactly the same way in all environments.
+* It's relatively easy to implement. That means, there are lots of runtimes designed for different environments: browsers, smart contracts, embedded systems, etc.
 
 ## 2024-02. TinyGo
 
-...
+On 3 February 2024, I attended FOSDEM. It's a free conference dedicated to all things open source. There are lots of amazing people, talks, and stickers. There I met Ron Evans, a core maintainer of [TinyGo]. TinyGo is a "Go compiler for small places". It makes it possible to run almost any Go code on almost any device. The produced code is generally very small and quite fast. And it can compile Go to WebAssembly!
+
+Word by word, I started to talk about Aard and WebAssembly. And turns out, Ron had a talk planned for WASM/IO, a conference in March dedicated to WebAssembly. He had some ideas what to show but nothing implemented yet. So, we decided to work on it together. In a span of just one month, we produced several cool projects with a common idea of fusing Go and WebAssembly:
+
+1. We added a pure WebAssembly target into TinyGo. That means, now you can run Go apps in non-browser WebAssembly runtimes.
+1. We made [Wazero] compile with TinyGo. Wazero is a pure Go runtime for WebAssembly. That means, now you have a WebAssembly runtime that can run on any device that TinyGo supports. And it's a very long list! There are TinyGo projects running on keyboards, drones, thermometers, and even earrings.
+1. We made [Mechanoid], a framework for running WebAssembly on IoT devices. It's a TinyGo and Wazero-powered runtime that provides to WebAssembly apps access to things like device sreen, sensor values, keyboard input, etc.
+
+Ron presented all of it and some other projects, like controlling a drone with WebAssembly, at WASM/IO. Here is the full talk: ...
+
+[Mechanoid]: https://github.com/hybridgroup/mechanoid
+[Wazero]: https://github.com/tetratelabs/wazero
+[TinyGo]: https://github.com/tinygo-org/tinygo
 
 ## 2024-02. Gamgee
 
 ...
 
+[gamgee](https://github.com/orsinium-labs/gamgee)
+
 ## 2024-03. Firefly Zero
 
 On 10 March 2024, I met with Alex, told him about the same history as you just read, and said that I want to make a handheld game console with WebAssembly and multiplayer. The very next day we started to write the first documentation for what will later become Firefly Zero. I drafted some design ideas for graphics and Alex wrote down what hardware components we will need. This was the beginning.
 
-At the moment of writing this post (July 2024), we already made a lot of progress, especially considering that we both have daily jobs and work on Firefly Zero on evenings and weekends. We have SDKs for Go and Rust, drafts for SDKs for Python, C, C++, Zig, and Elixir, a very powerful CLI, online game catalog, testing framework, cross-platform emulator, graphics, and even multiplayer. If we are pressed to release the project as-is in this very minute, we already wouldn't be ashamed of the result. And yet, we still have a lot of things we want to implement before that. This is our first big project, and we want it to be very good and memorable.
+At the moment of writing this post (July 2024), we already made a lot of progress, especially considering that we both have daily jobs and work on Firefly Zero on evenings and weekends. We have SDKs for [Go](https://github.com/firefly-zero/firefly-go) and [Rust](https://github.com/firefly-zero/firefly-rust), drafts for SDKs for Python, C, C++, Zig, and Elixir, [very powerful CLI](https://github.com/firefly-zero/firefly-cli), [online game catalog](https://catalog.fireflyzero.com/) with [one game](https://catalog.fireflyzero.com/lux.snek.html), testing framework, cross-platform [emulator](https://docs.fireflyzero.com/user/emulator/), [graphics](https://docs.fireflyzero.com/dev/graphics/), and even [multiplayer](https://docs.fireflyzero.com/dev/net/). If we are pressed to release the project as-is in this very minute, we already wouldn't be ashamed of the result. And yet, we still have a lot of things we want to implement before that. This is our first big project, and we want it to be very good and memorable.
 
 Show must go on!
