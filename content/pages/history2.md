@@ -33,7 +33,7 @@ In November 2023, I started to write a programming language called Aard. Current
 For me, Aard meant going back to WebAssembly. And this time, I had to know everything about it. I started reading all proposals and specifications, digging into different implementations, discovering best practices, etc. I learned that WebAssembly isn't just a way to run Go in the browser. It's much, much more than that!
 
 * WebAssembly is a **secure sandbox**. WebAssembly apps can do only what their runtime allows them to do.
-* It **makes impossible some common errors** that plague everything written in C. YOu cannot access memory you don't own, you can't get a random "garbage value" in a variable. If there's a bug in your app and hackers can write any values into the memory, they still can't modify how your app works.
+* It **makes impossible some common errors** that plague everything written in C. You cannot access memory you don't own, you can't get a random "garbage value" in a variable. If there's a bug in your app and hackers can write any values into the memory, they still can't modify how your app works.
 * It's a virtual machine. The runtime **can observe** a lot about the running app. It knows how many instructions the app executed, if it's stuck in a loop, if it sends a network request, etc.
 * It's **fast**. Running a WebAssembly app is slower than running a native C app but much faster than running any interpreted language or any other virtual machine.
 * It's **portable**. The same WebAssembly app will work in exactly the same way in all environments.
