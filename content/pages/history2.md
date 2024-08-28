@@ -5,7 +5,7 @@ date: "2024-07-31"
 tags: ["software"]
 ---
 
-This is the second and the last part of the series about the history of Firefly Zero. The first part: [A brief history of fantasy video game consoles](./history1.md).
+This is the second and the last part of the series about the history of Firefly Zero. The first part: [A brief history of fantasy video game consoles](https://blog.fireflyzero.com/pages/history1/).
 
 ## 2017. WebAssembly
 

@@ -60,4 +60,4 @@ That's because games for WebAssembly can be written in lots of languages. The of
 
 ## To be continued
 
-Curious to see how it all ties together? Check out the second part: [Bringing WebAssembly to microcontrollers](./history2.md)
+Curious to see how it all ties together? Check out the second part: [Bringing WebAssembly to microcontrollers](https://blog.fireflyzero.com/pages/history2/)
