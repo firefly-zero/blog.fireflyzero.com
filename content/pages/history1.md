@@ -7,7 +7,7 @@ tags: ["software"]
 
 This is the first post in the two-part series about the history of Firefly Zero. This post is dedicated to the technologies that inspired Firefly Zero, from early computers to modern programming languages.
 
-Second part: [Bringing WebAssembly to microcontrollers](./history2.md).
+Second part: [Bringing WebAssembly to microcontrollers](https://blog.fireflyzero.com/pages/history2/).
 
 ## 1977. CHIP-8
 
