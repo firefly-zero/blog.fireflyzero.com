@@ -7,7 +7,7 @@ tags: ["software"]
 
 We're making a cool game console and we need you to make cool games for it.
 
-[Firefly Zero](https://fireflyzero.com/) is a handheld game console, similar to [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) (GBA). However, unlike GBA, it is modern (and easy to program), has same-room multiplayer (over Bluetooth), and has a touchpad for controls.
+[Firefly Zero](https://fireflyzero.com/) is a handheld game console, similar to [Game Boy Advance](https://en.wikipedia.org/wiki/Game_Boy_Advance) (GBA). However, unlike GBA, it is modern (and easy to program), has same-room multiplayer (over Bluetooth), and uses a touchpad instead of D-pad for more precise controls.
 
 ## Developer experience
 
