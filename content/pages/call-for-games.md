@@ -24,7 +24,7 @@ In future, we'll support Python, TypeScript, Lua, Zig, Kotlin, and much more.
 
 The official SDKs are designed to be idiomatic, friendly, and zero-allocation.
 
-Firefly Zero has [firefly-cli](https://github.com/firefly-zero/firefly-cli) a swiss army knife CLI tool to do everything you'll ever need for writing a game: build, publish, download, install, profile, inspect, etc.
+Firefly Zero has [firefly-cli](https://github.com/firefly-zero/firefly-cli), a swiss army knife CLI tool to do everything you'll ever need for writing a game: build, publish, download, install, profile, inspect, etc.
 
 Creating your first app is as simple as:
 
@@ -69,7 +69,7 @@ More games will be added over time, so keep an eye on [catalog.fireflyzero.com](
 
 A good starting point is to port an existing game. And then maybe add a twist on it, like multiplayer or more precise controls with the touchpad.
 
-[WASM4](https://wasm4.org/play) is one of the closest platforms to Firefly Zer oin terms of supported API. Its catalog has lots of games, many of which are open-source. Some of my favorites:
+[WASM4](https://wasm4.org/play) is one of the closest platforms to Firefly Zero in terms of supported API. Its catalog has lots of games, many of which are open-source. Some of my favorites:
 
 * Go:
   * [2048](https://github.com/peterhellberg/w4-2048)
