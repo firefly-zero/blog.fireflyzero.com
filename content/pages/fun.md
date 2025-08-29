@@ -26,7 +26,11 @@ Anyway, what can be more fun to subject your players to hard choices, dilemmas, 
 
 ### Everything is fun together
 
-...
+You can fun on YouTube and Twitch a ton of streams of people playing junky multiplayer games with their friends and having the best time of their life. It's not that much about playing the game as about doing something together with your friends and sharing the experience.
+
+A simple trick is to get a classic game and ask yourself "can I make it multiplayer?" For many games, like Pong or Snake, the answer is obvious. And for some games, the answer is much more interesting and not obvious at all. Your mind starts to wonder and this is when inspiration strikes. Multiplayer Tetris? Hmmm. You could divide the screen vertically into two parts, let each player control one half, and collapse the line only if it's filled on both sides. Or you could have one play field but let two blocks fall at the same time and each player controls one. Or let one player to only move the block and the other player only to rotate it. So many possibilities! Pick a game you like, write down possible twists you can add, and pick the one that inspires you the most.
+
+[Snek](Music to Make Love to Your Old Lady By) is the very first game we've implemented for Firefly Zero. We've put it together in Go in one evening, glued out first prototypes (Raspberry Pi running [firefly-emulator](https://docs.fireflyzero.com/user/emulator/)), and brought it to our first conference stand. And everyone (including people saying "I don't play video games") had a blast when playing it co-op! People laughing and competing with their friends and families while playing the game we made on the device we made is one of the main memories that I will cherish when I grow old.
 
 ### Share through stash
 
