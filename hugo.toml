@@ -1,7 +1,6 @@
 baseURL = "https://blog.fireflyzero.com/"
 languageCode = "en-us"
 title = "Firefly Zero blog"
-paginate = 40
 theme = "PaperMod"
 
 enableRobotsTXT = true
@@ -12,6 +11,9 @@ buildExpired = false
 [minify]
 disableXML = true
 minifyOutput = true
+
+[pagination]
+pagerSize = 40
 
 [params]
 env = "production"
