@@ -20,7 +20,7 @@ But as a platform, Discord sucks in a lot of ways. I never used Discord before. 
 
 Another big problem is that Discord isn't your friend. It's a big profit-driven corporation and every profit-driven corporation sooner or later will screw you up to make investors happy. We even have a new word for it: ensittification.
 
-In case you've missed the news, Discord recently reminded everyone about this. They are introducing age verification through government-issued IDs to sell them to USA government just shortly after having a massive data breach. This caused a big exodus from Discord but... Where to go?
+In case you've missed the news, Discord recently reminded everyone about this. They are [introducing age verification](https://www.eff.org/deeplinks/2026/02/discord-voluntarily-pushes-mandatory-age-verification-despite-recent-data-breach) through government-issued IDs to sell them to USA government just shortly after having a massive data breach. This caused a big exodus from Discord but... Where to go?
 
 ## Forums
 
