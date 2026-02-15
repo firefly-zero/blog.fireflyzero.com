@@ -78,6 +78,10 @@ Before I created a Discord server, I hoped that people will just do that but it 
 
 Solution? Well, someone needs to go and make a new Discord-like app for Mastodon. I think it's that simple, no need to write your own protocol or server. UI is means to UX. Let people see posts in a hashtag or account as a "community", replies as a "thread", make it look like a messenger, and people will engage with it just like they engage with Discord. Federation is the future and we already have a solid techology ([ActivityPub](https://en.wikipedia.org/wiki/ActivityPub)) for that.
 
+## What's next?
+
+We're staying on Discord because there is nowhere else to go without losing accessbility of our community. I'll keep looking for alternatives and if one day we have a working federated solution, we'll move. Until then, well, let's hope that the new changes don't affect our community.
+
 ## Further reading
 
 * [Discord Alternatives: My Personal Deep Dive into Matrix, Zulip, Discourse, and Stoat](https://rant.mvh.dev/discord-alternatives-my-personal-deep-dive-into-matrix-zulip-discourse-and-stoat)
